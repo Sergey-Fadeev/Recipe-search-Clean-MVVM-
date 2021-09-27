@@ -15,6 +15,11 @@
 		895B9D0027006C2D007BBA4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B9CFE27006C2D007BBA4A /* LaunchScreen.storyboard */; };
 		895B9D0B27006C2D007BBA4A /* Recipe_search_Clean_MVVM_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D0A27006C2D007BBA4A /* Recipe_search_Clean_MVVM_Tests.swift */; };
 		895B9D1627006C2D007BBA4A /* Recipe_search_Clean_MVVM_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D1527006C2D007BBA4A /* Recipe_search_Clean_MVVM_UITests.swift */; };
+		895B9D2827006F53007BBA4A /* APPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2727006F53007BBA4A /* APPConfiguration.swift */; };
+		895B9D2C27007255007BBA4A /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2B27007255007BBA4A /* DataTransferService.swift */; };
+		895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2D27007DD7007BBA4A /* NetworkService.swift */; };
+		895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2F27007E96007BBA4A /* EndPoint.swift */; };
+		895B9D3227007EE9007BBA4A /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D3127007EE9007BBA4A /* NetworkConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		895B9D1127006C2D007BBA4A /* Recipe search(Clean+MVVM)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipe search(Clean+MVVM)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B9D1527006C2D007BBA4A /* Recipe_search_Clean_MVVM_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_search_Clean_MVVM_UITests.swift; sourceTree = "<group>"; };
 		895B9D1727006C2D007BBA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		895B9D2727006F53007BBA4A /* APPConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPConfiguration.swift; sourceTree = "<group>"; };
+		895B9D2B27007255007BBA4A /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		895B9D2D27007DD7007BBA4A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		895B9D2F27007E96007BBA4A /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		895B9D3127007EE9007BBA4A /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,8 @@
 		895B9CF227006C2C007BBA4A /* Recipe search(Clean+MVVM) */ = {
 			isa = PBXGroup;
 			children = (
-				895B9CF327006C2C007BBA4A /* AppDelegate.swift */,
+				895B9D2327006D95007BBA4A /* Application */,
+				895B9D29270071E5007BBA4A /* Infrastructure */,
 				895B9CF527006C2C007BBA4A /* SceneDelegate.swift */,
 				895B9CF727006C2C007BBA4A /* ViewController.swift */,
 				895B9CF927006C2C007BBA4A /* Main.storyboard */,
@@ -126,6 +137,42 @@
 				895B9D1727006C2D007BBA4A /* Info.plist */,
 			);
 			path = "Recipe search(Clean+MVVM)UITests";
+			sourceTree = "<group>";
+		};
+		895B9D2327006D95007BBA4A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				895B9CF327006C2C007BBA4A /* AppDelegate.swift */,
+				895B9D2727006F53007BBA4A /* APPConfiguration.swift */,
+				895B9D2427006DAE007BBA4A /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		895B9D2427006DAE007BBA4A /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		895B9D29270071E5007BBA4A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D2A270071FA007BBA4A /* NetWork */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		895B9D2A270071FA007BBA4A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D2B27007255007BBA4A /* DataTransferService.swift */,
+				895B9D2D27007DD7007BBA4A /* NetworkService.swift */,
+				895B9D2F27007E96007BBA4A /* EndPoint.swift */,
+				895B9D3127007EE9007BBA4A /* NetworkConfig.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895B9D2C27007255007BBA4A /* DataTransferService.swift in Sources */,
+				895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */,
+				895B9D2827006F53007BBA4A /* APPConfiguration.swift in Sources */,
 				895B9CF827006C2C007BBA4A /* ViewController.swift in Sources */,
 				895B9CF427006C2C007BBA4A /* AppDelegate.swift in Sources */,
 				895B9CF627006C2C007BBA4A /* SceneDelegate.swift in Sources */,
+				895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */,
+				895B9D3227007EE9007BBA4A /* NetworkConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +486,13 @@
 		895B9D1B27006C2D007BBA4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "http://api.themoviedb.org";
+				API_KEY = aa3344048a3f4311a314f4720ef4750b;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA8M7X82UD;
+				IMAGE_BASE_URL = "http://image.tmdb.org";
 				INFOPLIST_FILE = "Recipe search(Clean+MVVM)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,9 +508,13 @@
 		895B9D1C27006C2D007BBA4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "http://api.themoviedb.org";
+				API_KEY = aa3344048a3f4311a314f4720ef4750b;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA8M7X82UD;
+				IMAGE_BASE_URL = "http://image.tmdb.org";
 				INFOPLIST_FILE = "Recipe search(Clean+MVVM)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
