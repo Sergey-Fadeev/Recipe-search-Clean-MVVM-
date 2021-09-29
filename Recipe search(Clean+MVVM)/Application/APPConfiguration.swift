@@ -20,6 +20,12 @@ final class AppConfiguration {
         }
         return apiBaseURL
     }()
+    lazy var apiSpecificDishURL: String = {
+        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "ApiSpecificDishURL") as? String else {
+            fatalError("ApiSpecificDishURL must not be empty in plist")
+        }
+        return apiBaseURL
+    }()
     lazy var imagesBaseURL: String = {
         guard let imageBaseURL = Bundle.main.object(forInfoDictionaryKey: "ImageBaseURL") as? String else {
             fatalError("ApiBaseURL must not be empty in plist")

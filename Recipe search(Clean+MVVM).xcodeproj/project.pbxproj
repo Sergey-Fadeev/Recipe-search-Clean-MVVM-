@@ -15,11 +15,18 @@
 		895B9D0027006C2D007BBA4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895B9CFE27006C2D007BBA4A /* LaunchScreen.storyboard */; };
 		895B9D0B27006C2D007BBA4A /* Recipe_search_Clean_MVVM_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D0A27006C2D007BBA4A /* Recipe_search_Clean_MVVM_Tests.swift */; };
 		895B9D1627006C2D007BBA4A /* Recipe_search_Clean_MVVM_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D1527006C2D007BBA4A /* Recipe_search_Clean_MVVM_UITests.swift */; };
-		895B9D2827006F53007BBA4A /* APPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2727006F53007BBA4A /* APPConfiguration.swift */; };
+		895B9D2827006F53007BBA4A /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2727006F53007BBA4A /* AppConfiguration.swift */; };
 		895B9D2C27007255007BBA4A /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2B27007255007BBA4A /* DataTransferService.swift */; };
 		895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2D27007DD7007BBA4A /* NetworkService.swift */; };
 		895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D2F27007E96007BBA4A /* EndPoint.swift */; };
 		895B9D3227007EE9007BBA4A /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D3127007EE9007BBA4A /* NetworkConfig.swift */; };
+		895B9D3D2704D1C2007BBA4A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D3C2704D1C2007BBA4A /* Recipe.swift */; };
+		895B9D3F2704D2B3007BBA4A /* RecipeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D3E2704D2B3007BBA4A /* RecipeQuery.swift */; };
+		895B9D442704D3EA007BBA4A /* RecipesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D432704D3EA007BBA4A /* RecipesRepository.swift */; };
+		895B9D462704D48E007BBA4A /* RecipesQueriesRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D452704D48E007BBA4A /* RecipesQueriesRepositories.swift */; };
+		895B9D482704D51A007BBA4A /* RecipesImagesRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D472704D51A007BBA4A /* RecipesImagesRepositories.swift */; };
+		895B9D4B2704D5BD007BBA4A /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D4A2704D5BD007BBA4A /* Cancelable.swift */; };
+		895B9D4D2704D5D5007BBA4A /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D4C2704D5D5007BBA4A /* ConnectionError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +61,18 @@
 		895B9D1127006C2D007BBA4A /* Recipe search(Clean+MVVM)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipe search(Clean+MVVM)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B9D1527006C2D007BBA4A /* Recipe_search_Clean_MVVM_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_search_Clean_MVVM_UITests.swift; sourceTree = "<group>"; };
 		895B9D1727006C2D007BBA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895B9D2727006F53007BBA4A /* APPConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPConfiguration.swift; sourceTree = "<group>"; };
+		895B9D2727006F53007BBA4A /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		895B9D2B27007255007BBA4A /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		895B9D2D27007DD7007BBA4A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		895B9D2F27007E96007BBA4A /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		895B9D3127007EE9007BBA4A /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		895B9D3C2704D1C2007BBA4A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		895B9D3E2704D2B3007BBA4A /* RecipeQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeQuery.swift; sourceTree = "<group>"; };
+		895B9D432704D3EA007BBA4A /* RecipesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRepository.swift; sourceTree = "<group>"; };
+		895B9D452704D48E007BBA4A /* RecipesQueriesRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesQueriesRepositories.swift; sourceTree = "<group>"; };
+		895B9D472704D51A007BBA4A /* RecipesImagesRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesImagesRepositories.swift; sourceTree = "<group>"; };
+		895B9D4A2704D5BD007BBA4A /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		895B9D4C2704D5D5007BBA4A /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				895B9D2327006D95007BBA4A /* Application */,
+				895B9D392701DA77007BBA4A /* Domain */,
+				895B9D492704D558007BBA4A /* Common */,
 				895B9D29270071E5007BBA4A /* Infrastructure */,
 				895B9CF527006C2C007BBA4A /* SceneDelegate.swift */,
 				895B9CF727006C2C007BBA4A /* ViewController.swift */,
@@ -142,18 +158,11 @@
 		895B9D2327006D95007BBA4A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				895B9D3B2704CE2D007BBA4A /* DIContainer */,
 				895B9CF327006C2C007BBA4A /* AppDelegate.swift */,
-				895B9D2727006F53007BBA4A /* APPConfiguration.swift */,
-				895B9D2427006DAE007BBA4A /* DIContainer */,
+				895B9D2727006F53007BBA4A /* AppConfiguration.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		895B9D2427006DAE007BBA4A /* DIContainer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DIContainer;
 			sourceTree = "<group>";
 		};
 		895B9D29270071E5007BBA4A /* Infrastructure */ = {
@@ -173,6 +182,66 @@
 				895B9D3127007EE9007BBA4A /* NetworkConfig.swift */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		895B9D392701DA77007BBA4A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D3A2701DD67007BBA4A /* Entities */,
+				895B9D412704D335007BBA4A /* UseCases */,
+				895B9D402704D320007BBA4A /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		895B9D3A2701DD67007BBA4A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D3C2704D1C2007BBA4A /* Recipe.swift */,
+				895B9D3E2704D2B3007BBA4A /* RecipeQuery.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		895B9D3B2704CE2D007BBA4A /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		895B9D402704D320007BBA4A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D422704D389007BBA4A /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		895B9D412704D335007BBA4A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		895B9D422704D389007BBA4A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D432704D3EA007BBA4A /* RecipesRepository.swift */,
+				895B9D452704D48E007BBA4A /* RecipesQueriesRepositories.swift */,
+				895B9D472704D51A007BBA4A /* RecipesImagesRepositories.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		895B9D492704D558007BBA4A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D4A2704D5BD007BBA4A /* Cancelable.swift */,
+				895B9D4C2704D5D5007BBA4A /* ConnectionError.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,12 +376,19 @@
 			files = (
 				895B9D2C27007255007BBA4A /* DataTransferService.swift in Sources */,
 				895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */,
-				895B9D2827006F53007BBA4A /* APPConfiguration.swift in Sources */,
+				895B9D3F2704D2B3007BBA4A /* RecipeQuery.swift in Sources */,
+				895B9D4D2704D5D5007BBA4A /* ConnectionError.swift in Sources */,
+				895B9D2827006F53007BBA4A /* AppConfiguration.swift in Sources */,
+				895B9D482704D51A007BBA4A /* RecipesImagesRepositories.swift in Sources */,
+				895B9D462704D48E007BBA4A /* RecipesQueriesRepositories.swift in Sources */,
 				895B9CF827006C2C007BBA4A /* ViewController.swift in Sources */,
 				895B9CF427006C2C007BBA4A /* AppDelegate.swift in Sources */,
 				895B9CF627006C2C007BBA4A /* SceneDelegate.swift in Sources */,
+				895B9D442704D3EA007BBA4A /* RecipesRepository.swift in Sources */,
 				895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */,
+				895B9D3D2704D1C2007BBA4A /* Recipe.swift in Sources */,
 				895B9D3227007EE9007BBA4A /* NetworkConfig.swift in Sources */,
+				895B9D4B2704D5BD007BBA4A /* Cancelable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,8 +562,9 @@
 		895B9D1B27006C2D007BBA4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_BASE_URL = "http://api.themoviedb.org";
+				API_BASE_URL = "https://api.spoonacular.com/recipes/complexSearch";
 				API_KEY = aa3344048a3f4311a314f4720ef4750b;
+				API_SPECIFIC_DISH = "https://api.spoonacular.com/recipes";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,8 +585,9 @@
 		895B9D1C27006C2D007BBA4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_BASE_URL = "http://api.themoviedb.org";
+				API_BASE_URL = "https://api.spoonacular.com/recipes/complexSearch";
 				API_KEY = aa3344048a3f4311a314f4720ef4750b;
+				API_SPECIFIC_DISH = "https://api.spoonacular.com/recipes";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
