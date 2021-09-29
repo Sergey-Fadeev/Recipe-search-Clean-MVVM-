@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MoviesRepository {
+protocol RecipesRepository {
     @discardableResult
     func fetchMoviesList(query: RecipeQuery, page: Int,
                          cached: @escaping (RecipesPage) -> Void,

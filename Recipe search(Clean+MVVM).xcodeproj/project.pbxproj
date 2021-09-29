@@ -27,6 +27,9 @@
 		895B9D482704D51A007BBA4A /* RecipesImagesRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D472704D51A007BBA4A /* RecipesImagesRepositories.swift */; };
 		895B9D4B2704D5BD007BBA4A /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D4A2704D5BD007BBA4A /* Cancelable.swift */; };
 		895B9D4D2704D5D5007BBA4A /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D4C2704D5D5007BBA4A /* ConnectionError.swift */; };
+		895B9D502704D76F007BBA4A /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D4F2704D76F007BBA4A /* UseCase.swift */; };
+		895B9D522704D7C5007BBA4A /* SearchRecipesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */; };
+		895B9D542704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		895B9D472704D51A007BBA4A /* RecipesImagesRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesImagesRepositories.swift; sourceTree = "<group>"; };
 		895B9D4A2704D5BD007BBA4A /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		895B9D4C2704D5D5007BBA4A /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		895B9D4F2704D76F007BBA4A /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesUseCases.swift; sourceTree = "<group>"; };
+		895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentRecipeQueriesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,9 @@
 		895B9D412704D335007BBA4A /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */,
+				895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */,
+				895B9D4E2704D753007BBA4A /* Protocol */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -242,6 +251,14 @@
 				895B9D4C2704D5D5007BBA4A /* ConnectionError.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		895B9D4E2704D753007BBA4A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				895B9D4F2704D76F007BBA4A /* UseCase.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,8 +392,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				895B9D2C27007255007BBA4A /* DataTransferService.swift in Sources */,
+				895B9D502704D76F007BBA4A /* UseCase.swift in Sources */,
 				895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */,
 				895B9D3F2704D2B3007BBA4A /* RecipeQuery.swift in Sources */,
+				895B9D542704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift in Sources */,
 				895B9D4D2704D5D5007BBA4A /* ConnectionError.swift in Sources */,
 				895B9D2827006F53007BBA4A /* AppConfiguration.swift in Sources */,
 				895B9D482704D51A007BBA4A /* RecipesImagesRepositories.swift in Sources */,
@@ -387,6 +406,7 @@
 				895B9D442704D3EA007BBA4A /* RecipesRepository.swift in Sources */,
 				895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */,
 				895B9D3D2704D1C2007BBA4A /* Recipe.swift in Sources */,
+				895B9D522704D7C5007BBA4A /* SearchRecipesUseCases.swift in Sources */,
 				895B9D3227007EE9007BBA4A /* NetworkConfig.swift in Sources */,
 				895B9D4B2704D5BD007BBA4A /* Cancelable.swift in Sources */,
 			);

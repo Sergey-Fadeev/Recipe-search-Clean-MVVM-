@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MoviesQueriesRepository {
+protocol RecipesQueriesRepository {
     func fetchRecentsQueries(maxCount: Int, completion: @escaping (Result<[RecipeQuery], Error>) -> Void)
     func saveRecentQuery(query: RecipeQuery, completion: @escaping (Result<RecipeQuery, Error>) -> Void)
 }
