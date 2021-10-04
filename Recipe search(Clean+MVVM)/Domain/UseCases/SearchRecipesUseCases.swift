@@ -8,34 +8,34 @@
 import Foundation
 
 protocol SearchRecipesUseCase {
-    func execute(requestValue: SearchMoviesUseCaseRequestValue,
+    func execute(requestValue: SearchRecipesUseCaseRequestValue,
                  cached: @escaping (RecipesPage) -> Void,
                  completion: @escaping (Result<RecipesPage, Error>) -> Void) -> Cancellable?
 }
 
-final class DefaultSearchMoviesUseCase: SearchRecipesUseCase {
+final class DefaultSearchRecipesUseCase: SearchRecipesUseCase {
 
     private let recipesRepository: RecipesRepository
-    private let moviesQueriesRepository: RecipesQueriesRepository
+    private let recipesQueriesRepository: RecipesQueriesRepository
 
-    init(moviesRepository: RecipesRepository,
-         moviesQueriesRepository: RecipesQueriesRepository) {
+    init(recipesRepository: RecipesRepository,
+         recipesQueriesRepository: RecipesQueriesRepository) {
 
-        self.recipesRepository = moviesRepository
-        self.moviesQueriesRepository = moviesQueriesRepository
+        self.recipesRepository = recipesRepository
+        self.recipesQueriesRepository = recipesQueriesRepository
     }
 
-    func execute(requestValue: SearchMoviesUseCaseRequestValue,
+    func execute(requestValue: SearchRecipesUseCaseRequestValue,
                  cached: @escaping (RecipesPage) -> Void,
                  completion: @escaping (Result<RecipesPage, Error>) -> Void) -> Cancellable? {
 
-        return recipesRepository.fetchMoviesList(query: requestValue.query,
+        return recipesRepository.fetchRecipesList(query: requestValue.query,
                                                 page: requestValue.page,
                                                 cached: cached,
                                                 completion: { result in
 
             if case .success = result {
-                self.moviesQueriesRepository.saveRecentQuery(query: requestValue.query) { _ in }
+                self.recipesQueriesRepository.saveRecentQuery(query: requestValue.query) { _ in }
             }
 
             completion(result)
@@ -43,7 +43,7 @@ final class DefaultSearchMoviesUseCase: SearchRecipesUseCase {
     }
 }
 
-struct SearchMoviesUseCaseRequestValue {
+struct SearchRecipesUseCaseRequestValue {
     let query: RecipeQuery
     let page: Int
 }

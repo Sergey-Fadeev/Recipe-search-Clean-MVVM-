@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891B375A2707210C003479E6 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B37592707210C003479E6 /* APIEndPoints.swift */; };
+		891B375D270B2157003479E6 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B375C270B2157003479E6 /* CoreDataStorage.swift */; };
+		891B3769270B337C003479E6 /* RecipeQueryUDS+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B3768270B337C003479E6 /* RecipeQueryUDS+Mapping.swift */; };
+		891B376B270B341A003479E6 /* UserDefaultsRecipesQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B376A270B341A003479E6 /* UserDefaultsRecipesQueriesStorage.swift */; };
+		891B376D270B34A4003479E6 /* RecipesQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B376C270B34A4003479E6 /* RecipesQueriesStorage.swift */; };
+		891B3774270B374D003479E6 /* CoreDataRcipesQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B3773270B374D003479E6 /* CoreDataRcipesQueriesStorage.swift */; };
+		891B3776270B38C9003479E6 /* RecipeQueryEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B3775270B38C9003479E6 /* RecipeQueryEntity+Mapping.swift */; };
+		891B3779270B3978003479E6 /* RecipesResponseEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B3778270B3978003479E6 /* RecipesResponseEntity+Mapping.swift */; };
+		891B377C270B5B39003479E6 /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 891B377A270B5B39003479E6 /* CoreDataStorage.xcdatamodeld */; };
+		891B377E270B654D003479E6 /* RecipesResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B377D270B654D003479E6 /* RecipesResponseStorage.swift */; };
+		891B3780270B658A003479E6 /* CoreDataRecipesResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B377F270B658A003479E6 /* CoreDataRecipesResponseStorage.swift */; };
 		895B9CF427006C2C007BBA4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9CF327006C2C007BBA4A /* AppDelegate.swift */; };
 		895B9CF627006C2C007BBA4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9CF527006C2C007BBA4A /* SceneDelegate.swift */; };
 		895B9CF827006C2C007BBA4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9CF727006C2C007BBA4A /* ViewController.swift */; };
@@ -30,6 +41,9 @@
 		895B9D502704D76F007BBA4A /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D4F2704D76F007BBA4A /* UseCase.swift */; };
 		895B9D522704D7C5007BBA4A /* SearchRecipesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */; };
 		895B9D542704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */; };
+		895B9D572704DC15007BBA4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 895B9D562704DC15007BBA4A /* Localizable.strings */; };
+		898DCAC827063941000D9321 /* RecipesRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DCAC727063941000D9321 /* RecipesRequestDTO+Mapping.swift */; };
+		898DCACA27063960000D9321 /* RecipesResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DCAC927063960000D9321 /* RecipesResponseDTO+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +64,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		891B37592707210C003479E6 /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		891B375C270B2157003479E6 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		891B3768270B337C003479E6 /* RecipeQueryUDS+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeQueryUDS+Mapping.swift"; sourceTree = "<group>"; };
+		891B376A270B341A003479E6 /* UserDefaultsRecipesQueriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRecipesQueriesStorage.swift; sourceTree = "<group>"; };
+		891B376C270B34A4003479E6 /* RecipesQueriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesQueriesStorage.swift; sourceTree = "<group>"; };
+		891B3773270B374D003479E6 /* CoreDataRcipesQueriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRcipesQueriesStorage.swift; sourceTree = "<group>"; };
+		891B3775270B38C9003479E6 /* RecipeQueryEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeQueryEntity+Mapping.swift"; sourceTree = "<group>"; };
+		891B3778270B3978003479E6 /* RecipesResponseEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesResponseEntity+Mapping.swift"; sourceTree = "<group>"; };
+		891B377B270B5B39003479E6 /* CoreDataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataStorage.xcdatamodel; sourceTree = "<group>"; };
+		891B377D270B654D003479E6 /* RecipesResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesResponseStorage.swift; sourceTree = "<group>"; };
+		891B377F270B658A003479E6 /* CoreDataRecipesResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRecipesResponseStorage.swift; sourceTree = "<group>"; };
 		895B9CF027006C2C007BBA4A /* Recipe search(Clean+MVVM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe search(Clean+MVVM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895B9CF327006C2C007BBA4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895B9CF527006C2C007BBA4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +104,9 @@
 		895B9D4F2704D76F007BBA4A /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesUseCases.swift; sourceTree = "<group>"; };
 		895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentRecipeQueriesUseCase.swift; sourceTree = "<group>"; };
+		895B9D562704DC15007BBA4A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		898DCAC727063941000D9321 /* RecipesRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		898DCAC927063960000D9321 /* RecipesResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +134,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		891B375B270B2127003479E6 /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				891B3770270B366D003479E6 /* RecipesResponseStorages */,
+				891B3762270B3282003479E6 /* RecipesQueriesStorage */,
+				891B375E270B217A003479E6 /* CoreDataStorage */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		891B375E270B217A003479E6 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				891B375C270B2157003479E6 /* CoreDataStorage.swift */,
+				891B377A270B5B39003479E6 /* CoreDataStorage.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		891B3762270B3282003479E6 /* RecipesQueriesStorage */ = {
+			isa = PBXGroup;
+			children = (
+				891B376C270B34A4003479E6 /* RecipesQueriesStorage.swift */,
+				891B3771270B36B1003479E6 /* CoreDataStorage */,
+				891B3763270B32C5003479E6 /* UserDefaultStorage */,
+			);
+			path = RecipesQueriesStorage;
+			sourceTree = "<group>";
+		};
+		891B3763270B32C5003479E6 /* UserDefaultStorage */ = {
+			isa = PBXGroup;
+			children = (
+				891B376A270B341A003479E6 /* UserDefaultsRecipesQueriesStorage.swift */,
+				891B3764270B32DE003479E6 /* DataMapping */,
+			);
+			path = UserDefaultStorage;
+			sourceTree = "<group>";
+		};
+		891B3764270B32DE003479E6 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				891B3768270B337C003479E6 /* RecipeQueryUDS+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		891B3770270B366D003479E6 /* RecipesResponseStorages */ = {
+			isa = PBXGroup;
+			children = (
+				891B3777270B3959003479E6 /* EntityMapping */,
+				891B377D270B654D003479E6 /* RecipesResponseStorage.swift */,
+				891B377F270B658A003479E6 /* CoreDataRecipesResponseStorage.swift */,
+			);
+			path = RecipesResponseStorages;
+			sourceTree = "<group>";
+		};
+		891B3771270B36B1003479E6 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				891B3773270B374D003479E6 /* CoreDataRcipesQueriesStorage.swift */,
+				891B3772270B36D0003479E6 /* EntityMapping */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		891B3772270B36D0003479E6 /* EntityMapping */ = {
+			isa = PBXGroup;
+			children = (
+				891B3775270B38C9003479E6 /* RecipeQueryEntity+Mapping.swift */,
+			);
+			path = EntityMapping;
+			sourceTree = "<group>";
+		};
+		891B3777270B3959003479E6 /* EntityMapping */ = {
+			isa = PBXGroup;
+			children = (
+				891B3778270B3978003479E6 /* RecipesResponseEntity+Mapping.swift */,
+			);
+			path = EntityMapping;
+			sourceTree = "<group>";
+		};
 		895B9CE727006C2C007BBA4A = {
 			isa = PBXGroup;
 			children = (
@@ -131,14 +240,13 @@
 			children = (
 				895B9D2327006D95007BBA4A /* Application */,
 				895B9D392701DA77007BBA4A /* Domain */,
-				895B9D492704D558007BBA4A /* Common */,
+				898DCAC4270637BF000D9321 /* Data */,
 				895B9D29270071E5007BBA4A /* Infrastructure */,
+				895B9D492704D558007BBA4A /* Common */,
+				895B9D552704DB97007BBA4A /* Resources */,
 				895B9CF527006C2C007BBA4A /* SceneDelegate.swift */,
 				895B9CF727006C2C007BBA4A /* ViewController.swift */,
 				895B9CF927006C2C007BBA4A /* Main.storyboard */,
-				895B9CFC27006C2D007BBA4A /* Assets.xcassets */,
-				895B9CFE27006C2D007BBA4A /* LaunchScreen.storyboard */,
-				895B9D0127006C2D007BBA4A /* Info.plist */,
 			);
 			path = "Recipe search(Clean+MVVM)";
 			sourceTree = "<group>";
@@ -164,9 +272,9 @@
 		895B9D2327006D95007BBA4A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				895B9D3B2704CE2D007BBA4A /* DIContainer */,
 				895B9CF327006C2C007BBA4A /* AppDelegate.swift */,
 				895B9D2727006F53007BBA4A /* AppConfiguration.swift */,
+				895B9D3B2704CE2D007BBA4A /* DIContainer */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -259,6 +367,44 @@
 				895B9D4F2704D76F007BBA4A /* UseCase.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		895B9D552704DB97007BBA4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				895B9CFE27006C2D007BBA4A /* LaunchScreen.storyboard */,
+				895B9CFC27006C2D007BBA4A /* Assets.xcassets */,
+				895B9D0127006C2D007BBA4A /* Info.plist */,
+				895B9D562704DC15007BBA4A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		898DCAC4270637BF000D9321 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				898DCAC5270638E8000D9321 /* Network */,
+				891B375B270B2127003479E6 /* PersistentStorages */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		898DCAC5270638E8000D9321 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				891B37592707210C003479E6 /* APIEndPoints.swift */,
+				898DCAC6270638F4000D9321 /* DataMapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		898DCAC6270638F4000D9321 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				898DCAC727063941000D9321 /* RecipesRequestDTO+Mapping.swift */,
+				898DCAC927063960000D9321 /* RecipesResponseDTO+Mapping.swift */,
+			);
+			path = DataMapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				895B9D0027006C2D007BBA4A /* LaunchScreen.storyboard in Resources */,
+				895B9D572704DC15007BBA4A /* Localizable.strings in Resources */,
 				895B9CFD27006C2D007BBA4A /* Assets.xcassets in Resources */,
 				895B9CFB27006C2C007BBA4A /* Main.storyboard in Resources */,
 			);
@@ -391,17 +538,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891B3769270B337C003479E6 /* RecipeQueryUDS+Mapping.swift in Sources */,
+				891B3780270B658A003479E6 /* CoreDataRecipesResponseStorage.swift in Sources */,
 				895B9D2C27007255007BBA4A /* DataTransferService.swift in Sources */,
+				891B377C270B5B39003479E6 /* CoreDataStorage.xcdatamodeld in Sources */,
+				891B376B270B341A003479E6 /* UserDefaultsRecipesQueriesStorage.swift in Sources */,
 				895B9D502704D76F007BBA4A /* UseCase.swift in Sources */,
+				891B3779270B3978003479E6 /* RecipesResponseEntity+Mapping.swift in Sources */,
+				891B3776270B38C9003479E6 /* RecipeQueryEntity+Mapping.swift in Sources */,
+				891B376D270B34A4003479E6 /* RecipesQueriesStorage.swift in Sources */,
+				891B375A2707210C003479E6 /* APIEndPoints.swift in Sources */,
 				895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */,
 				895B9D3F2704D2B3007BBA4A /* RecipeQuery.swift in Sources */,
 				895B9D542704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift in Sources */,
+				898DCAC827063941000D9321 /* RecipesRequestDTO+Mapping.swift in Sources */,
 				895B9D4D2704D5D5007BBA4A /* ConnectionError.swift in Sources */,
 				895B9D2827006F53007BBA4A /* AppConfiguration.swift in Sources */,
 				895B9D482704D51A007BBA4A /* RecipesImagesRepositories.swift in Sources */,
+				891B377E270B654D003479E6 /* RecipesResponseStorage.swift in Sources */,
 				895B9D462704D48E007BBA4A /* RecipesQueriesRepositories.swift in Sources */,
+				898DCACA27063960000D9321 /* RecipesResponseDTO+Mapping.swift in Sources */,
+				891B3774270B374D003479E6 /* CoreDataRcipesQueriesStorage.swift in Sources */,
 				895B9CF827006C2C007BBA4A /* ViewController.swift in Sources */,
 				895B9CF427006C2C007BBA4A /* AppDelegate.swift in Sources */,
+				891B375D270B2157003479E6 /* CoreDataStorage.swift in Sources */,
 				895B9CF627006C2C007BBA4A /* SceneDelegate.swift in Sources */,
 				895B9D442704D3EA007BBA4A /* RecipesRepository.swift in Sources */,
 				895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */,
@@ -590,7 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA8M7X82UD;
 				IMAGE_BASE_URL = "http://image.tmdb.org";
-				INFOPLIST_FILE = "Recipe search(Clean+MVVM)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Recipe search(Clean+MVVM)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,7 +773,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA8M7X82UD;
 				IMAGE_BASE_URL = "http://image.tmdb.org";
-				INFOPLIST_FILE = "Recipe search(Clean+MVVM)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Recipe search(Clean+MVVM)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -745,6 +905,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		891B377A270B5B39003479E6 /* CoreDataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				891B377B270B5B39003479E6 /* CoreDataStorage.xcdatamodel */,
+			);
+			currentVersion = 891B377B270B5B39003479E6 /* CoreDataStorage.xcdatamodel */;
+			path = CoreDataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 895B9CE827006C2C007BBA4A /* Project object */;
 }

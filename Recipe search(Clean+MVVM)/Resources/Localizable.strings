@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Recipe search(Clean+MVVM)
+
+  Created by Sergey on 29.09.2021.
+  
+*/
+
+"Recipes" = "Recipes";
+"Search results" = "Search results";
+"Error" = "Error";
+"No internet connection" = "No internet connection";
+"Failed loading recipes" = "Failed loading recipes";
+"Search Recipes" = "Search Recipes";

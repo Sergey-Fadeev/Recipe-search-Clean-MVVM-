@@ -14,8 +14,11 @@ struct RecipesPage: Codable {
 }
 
 // MARK: - Result
-struct Recipe: Codable {
-    let id: Int
+struct Recipe: Codable, Identifiable {
+    
+    typealias Identifier = String
+    
+    let id: Identifier
     let title: String
     let image: String
     let imageType: ImageType
