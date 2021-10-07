@@ -9,7 +9,7 @@ import Foundation
 
 final class UserDefaultsRecipesQueriesStorage {
     private let maxStorageLimit: Int
-    private let recentsMoviesQueriesKey = "recentsRecipesQueries"
+    private let recentsRecipesQueriesKey = "recentsRecipesQueries"
     private var userDefaults: UserDefaults
     
     init(maxStorageLimit: Int, userDefaults: UserDefaults = UserDefaults.standard) {
@@ -17,20 +17,20 @@ final class UserDefaultsRecipesQueriesStorage {
         self.userDefaults = userDefaults
     }
 
-    private func fetchMoviesQuries() -> [RecipeQuery] {
-        if let queriesData = userDefaults.object(forKey: recentsMoviesQueriesKey) as? Data {
-            if let movieQueryList = try? JSONDecoder().decode(RecipeQueriesListUDS.self, from: queriesData) {
-                return movieQueryList.list.map { $0.toDomain() }
+    private func fetchRecipesQuries() -> [RecipeQuery] {
+        if let queriesData = userDefaults.object(forKey: recentsRecipesQueriesKey) as? Data {
+            if let recipeQueryList = try? JSONDecoder().decode(RecipeQueriesListUDS.self, from: queriesData) {
+                return recipeQueryList.list.map { $0.toDomain() }
             }
         }
         return []
     }
 
-    private func persist(moviesQuries: [RecipeQuery]) {
+    private func persist(recipesQuries: [RecipeQuery]) {
         let encoder = JSONEncoder()
-        let movieQueryUDSs = moviesQuries.map(RecipeQueryUDS.init)
-        if let encoded = try? encoder.encode(RecipeQueriesListUDS(list: movieQueryUDSs)) {
-            userDefaults.set(encoded, forKey: recentsMoviesQueriesKey)
+        let recipeQueryUDSs = recipesQuries.map(RecipeQueryUDS.init)
+        if let encoded = try? encoder.encode(RecipeQueriesListUDS(list: recipeQueryUDSs)) {
+            userDefaults.set(encoded, forKey: recentsRecipesQueriesKey)
         }
     }
 }
@@ -41,7 +41,7 @@ extension UserDefaultsRecipesQueriesStorage: RecipesQueriesStorage {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
 
-            var queries = self.fetchMoviesQuries()
+            var queries = self.fetchRecipesQuries()
             queries = queries.count < self.maxStorageLimit ? queries : Array(queries[0..<maxCount])
             completion(.success(queries))
         }
@@ -51,10 +51,10 @@ extension UserDefaultsRecipesQueriesStorage: RecipesQueriesStorage {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
 
-            var queries = self.fetchMoviesQuries()
+            var queries = self.fetchRecipesQuries()
             self.cleanUpQueries(for: query, in: &queries)
             queries.insert(query, at: 0)
-            self.persist(moviesQuries: queries)
+            self.persist(recipesQuries: queries)
 
             completion(.success(query))
         }

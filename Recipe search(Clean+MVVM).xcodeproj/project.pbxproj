@@ -42,6 +42,17 @@
 		895B9D522704D7C5007BBA4A /* SearchRecipesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */; };
 		895B9D542704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */; };
 		895B9D572704DC15007BBA4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 895B9D562704DC15007BBA4A /* Localizable.strings */; };
+		89826DC0270F202900EF941A /* UIViewController+AddBehaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DBF270F202900EF941A /* UIViewController+AddBehaviors.swift */; };
+		89826DC2270F203D00EF941A /* UIViewController+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DC1270F203D00EF941A /* UIViewController+AddChild.swift */; };
+		89826DC4270F205200EF941A /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DC3270F205200EF941A /* UIViewController+ActivityIndicator.swift */; };
+		89826DC6270F206700EF941A /* UIImageView+ImageSizeAfterAspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DC5270F206700EF941A /* UIImageView+ImageSizeAfterAspectFit.swift */; };
+		89826DC8270F207500EF941A /* CGSize+ScaledSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DC7270F207500EF941A /* CGSize+ScaledSize.swift */; };
+		89826DCA270F208400EF941A /* DataTransferError+ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DC9270F208400EF941A /* DataTransferError+ConnectionError.swift */; };
+		89826DCC270F21C800EF941A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DCB270F21C800EF941A /* Observable.swift */; };
+		89826DCE270F21D900EF941A /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DCD270F21D900EF941A /* AccessibilityIdentifier.swift */; };
+		89826DD0270F21E700EF941A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DCF270F21E700EF941A /* LoadingView.swift */; };
+		89826DD3270F229100EF941A /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DD2270F229100EF941A /* Alertable.swift */; };
+		89826DD5270F22A000EF941A /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89826DD4270F22A000EF941A /* StoryboardInstantiable.swift */; };
 		898DCAC827063941000D9321 /* RecipesRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DCAC727063941000D9321 /* RecipesRequestDTO+Mapping.swift */; };
 		898DCACA27063960000D9321 /* RecipesResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DCAC927063960000D9321 /* RecipesResponseDTO+Mapping.swift */; };
 /* End PBXBuildFile section */
@@ -105,6 +116,17 @@
 		895B9D512704D7C5007BBA4A /* SearchRecipesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesUseCases.swift; sourceTree = "<group>"; };
 		895B9D532704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentRecipeQueriesUseCase.swift; sourceTree = "<group>"; };
 		895B9D562704DC15007BBA4A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		89826DBF270F202900EF941A /* UIViewController+AddBehaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddBehaviors.swift"; sourceTree = "<group>"; };
+		89826DC1270F203D00EF941A /* UIViewController+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddChild.swift"; sourceTree = "<group>"; };
+		89826DC3270F205200EF941A /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		89826DC5270F206700EF941A /* UIImageView+ImageSizeAfterAspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageSizeAfterAspectFit.swift"; sourceTree = "<group>"; };
+		89826DC7270F207500EF941A /* CGSize+ScaledSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+ScaledSize.swift"; sourceTree = "<group>"; };
+		89826DC9270F208400EF941A /* DataTransferError+ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataTransferError+ConnectionError.swift"; sourceTree = "<group>"; };
+		89826DCB270F21C800EF941A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		89826DCD270F21D900EF941A /* AccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifier.swift; sourceTree = "<group>"; };
+		89826DCF270F21E700EF941A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		89826DD2270F229100EF941A /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		89826DD4270F22A000EF941A /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		898DCAC727063941000D9321 /* RecipesRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
 		898DCAC927063960000D9321 /* RecipesResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				895B9D2327006D95007BBA4A /* Application */,
+				897B1011270B6B5200039A99 /* Presentation */,
 				895B9D392701DA77007BBA4A /* Domain */,
 				898DCAC4270637BF000D9321 /* Data */,
 				895B9D29270071E5007BBA4A /* Infrastructure */,
@@ -378,6 +401,56 @@
 				895B9D562704DC15007BBA4A /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		897B1011270B6B5200039A99 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				89826DBC270F1CA800EF941A /* RecipesScene */,
+				89826DBD270F1CC500EF941A /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		89826DBC270F1CA800EF941A /* RecipesScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecipesScene;
+			sourceTree = "<group>";
+		};
+		89826DBD270F1CC500EF941A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				89826DBE270F1F0700EF941A /* Extentions */,
+				89826DD1270F227C00EF941A /* Protocols */,
+				89826DCB270F21C800EF941A /* Observable.swift */,
+				89826DCD270F21D900EF941A /* AccessibilityIdentifier.swift */,
+				89826DCF270F21E700EF941A /* LoadingView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		89826DBE270F1F0700EF941A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				89826DBF270F202900EF941A /* UIViewController+AddBehaviors.swift */,
+				89826DC1270F203D00EF941A /* UIViewController+AddChild.swift */,
+				89826DC3270F205200EF941A /* UIViewController+ActivityIndicator.swift */,
+				89826DC5270F206700EF941A /* UIImageView+ImageSizeAfterAspectFit.swift */,
+				89826DC7270F207500EF941A /* CGSize+ScaledSize.swift */,
+				89826DC9270F208400EF941A /* DataTransferError+ConnectionError.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		89826DD1270F227C00EF941A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				89826DD2270F229100EF941A /* Alertable.swift */,
+				89826DD4270F22A000EF941A /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		898DCAC4270637BF000D9321 /* Data */ = {
@@ -547,8 +620,10 @@
 				891B3779270B3978003479E6 /* RecipesResponseEntity+Mapping.swift in Sources */,
 				891B3776270B38C9003479E6 /* RecipeQueryEntity+Mapping.swift in Sources */,
 				891B376D270B34A4003479E6 /* RecipesQueriesStorage.swift in Sources */,
+				89826DC4270F205200EF941A /* UIViewController+ActivityIndicator.swift in Sources */,
 				891B375A2707210C003479E6 /* APIEndPoints.swift in Sources */,
 				895B9D3027007E96007BBA4A /* EndPoint.swift in Sources */,
+				89826DCC270F21C800EF941A /* Observable.swift in Sources */,
 				895B9D3F2704D2B3007BBA4A /* RecipeQuery.swift in Sources */,
 				895B9D542704D83A007BBA4A /* FetchRecentRecipeQueriesUseCase.swift in Sources */,
 				898DCAC827063941000D9321 /* RecipesRequestDTO+Mapping.swift in Sources */,
@@ -557,15 +632,24 @@
 				895B9D482704D51A007BBA4A /* RecipesImagesRepositories.swift in Sources */,
 				891B377E270B654D003479E6 /* RecipesResponseStorage.swift in Sources */,
 				895B9D462704D48E007BBA4A /* RecipesQueriesRepositories.swift in Sources */,
+				89826DC8270F207500EF941A /* CGSize+ScaledSize.swift in Sources */,
 				898DCACA27063960000D9321 /* RecipesResponseDTO+Mapping.swift in Sources */,
+				89826DC6270F206700EF941A /* UIImageView+ImageSizeAfterAspectFit.swift in Sources */,
 				891B3774270B374D003479E6 /* CoreDataRcipesQueriesStorage.swift in Sources */,
+				89826DD0270F21E700EF941A /* LoadingView.swift in Sources */,
 				895B9CF827006C2C007BBA4A /* ViewController.swift in Sources */,
+				89826DCE270F21D900EF941A /* AccessibilityIdentifier.swift in Sources */,
+				89826DC0270F202900EF941A /* UIViewController+AddBehaviors.swift in Sources */,
 				895B9CF427006C2C007BBA4A /* AppDelegate.swift in Sources */,
 				891B375D270B2157003479E6 /* CoreDataStorage.swift in Sources */,
 				895B9CF627006C2C007BBA4A /* SceneDelegate.swift in Sources */,
+				89826DD5270F22A000EF941A /* StoryboardInstantiable.swift in Sources */,
 				895B9D442704D3EA007BBA4A /* RecipesRepository.swift in Sources */,
 				895B9D2E27007DD7007BBA4A /* NetworkService.swift in Sources */,
+				89826DC2270F203D00EF941A /* UIViewController+AddChild.swift in Sources */,
+				89826DD3270F229100EF941A /* Alertable.swift in Sources */,
 				895B9D3D2704D1C2007BBA4A /* Recipe.swift in Sources */,
+				89826DCA270F208400EF941A /* DataTransferError+ConnectionError.swift in Sources */,
 				895B9D522704D7C5007BBA4A /* SearchRecipesUseCases.swift in Sources */,
 				895B9D3227007EE9007BBA4A /* NetworkConfig.swift in Sources */,
 				895B9D4B2704D5BD007BBA4A /* Cancelable.swift in Sources */,
